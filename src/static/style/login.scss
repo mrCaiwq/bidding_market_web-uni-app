@@ -1,0 +1,53 @@
+.login{
+	margin: 0upx;
+	padding: 0upx;
+}
+
+.login-box{
+	height: 500upx;
+	width: 92%;
+	padding: 0% 4%;
+	margin-top: 40upx;
+}
+
+.outer-box{
+	width: 700upx;
+	height: 60upx;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 26upx;
+}
+
+.from-input{
+	background: white;
+	border: 1upx solid #ccc;
+	border-radius: 8px;
+	width: 500upx;
+}
+
+.login-button-box{
+	width: 92%;
+	padding: 0% 4%;
+	margin-top: 40upx;
+	margin-bottom: 20upx;
+}
+
+.login-button{
+	background-color: #ff6600;
+	color: white
+}
+
+.login-button-hover{
+	opacity: 0.8;
+}
+
+.register{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.register-hover{
+	color: #ff6600;
+}

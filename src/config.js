@@ -1,0 +1,1 @@
+export const BASE_URL = 'http://monkeytech.tech:8082/api'

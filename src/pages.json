@@ -3,14 +3,37 @@
 		{
 			"path": "pages/index/index",
 			"style": {
-				"navigationBarTitleText": "uni-app"
+				"navigationBarTitleText": "拍卖商城",
+				"enablePullDownRefresh": true,
+				"app-plus": {
+					"titleNView": {
+                        "searchInput":{
+                                "align": "center",
+                                "placeholder": "请输入查找商品信息",
+                                "borderRadius":"50upx",
+                                "backgroundColor": "#fff"
+                            }
+					}
+				}
 			}
+		},
+		{
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "登录",
+				"app-plus": {
+					"titleNView": {
+						
+					}
+				}
+			}
+
 		}
 	],
 	"globalStyle": {
-		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#F8F8F8",
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "拍卖商城",
+		"navigationBarBackgroundColor": "#ff6600",
 		"backgroundColor": "#F8F8F8"
 	}
 }

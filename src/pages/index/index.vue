@@ -1,40 +1,53 @@
 <template>
-	<view class="content">
-        <image class="logo" src="../../static/logo.png"></image>
-		<view>
-            <text class="title">{{title}}</text>
-        </view>
-	</view>
+	<view class="page"><button type="primary" @click="login()">登录</button></view>
 </template>
 
 <script>
-	export default {
-		data() {
-			return {
-				title: 'Hello'
+export default {
+	data() {
+		return {
+
+		};
+	},
+	mounted() {
+		this.$checkToken()
+	},
+	onPullDownRefresh() {
+		uni.showModal({
+			title: '提示',
+			content: '这是一个弹窗',
+			success: function() {
+				console.log(1111)
+				uni.stopPullDownRefresh();
 			}
-		},
-		onLoad() {
+		});
+	},
+	methods: {
+		login(){
+		uni.navigateTo({
+			url: '../login/login',
+			success() {
 
-		},
-		methods: {
-
+			},
+			fail: (err) => {
+				console.log(JSON.stringify(err))
+			},
+		});
 		}
 	}
+};
 </script>
 
 <style>
-	.content {
-		text-align: center;
-		height: 400upx;
-	}
-    .logo{
-        height: 200upx;
-        width: 200upx;
-        margin-top: 200upx;
-    }
-	.title {
-		font-size: 36upx;
-		color: #8f8f94;
-	}
+.view-test {
+	background: red;
+	height: 100upx;
+}
+.a {
+	opacity: 0.8;
+}
+.input-box {
+	border: 1px solid red;
+	width: 400upx;
+}
 </style>
