@@ -9,8 +9,8 @@ export default {
 
 		};
 	},
-	mounted() {
-		this.$checkToken()
+	onReady() {
+		// this.$checkToken()
 	},
 	onPullDownRefresh() {
 		uni.showModal({

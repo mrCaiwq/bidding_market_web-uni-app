@@ -14,10 +14,10 @@
 				<input type="password" v-model="loginMsg.password" placeholder="请输入你的密码" class="from-input" />
 			</view>
 			<view class="login-button-box">
-				<button class="login-button" hover-class="login-button-hover">登录</button>
+				<button class="login-button" hover-class="login-button-hover" @click="login()">登录</button>
 			</view>
 			<view class="register" hover-class="register-hover">
-				还没有账号?赶紧注册
+				<navigator url="../register/register">还没有账号?赶紧注册</navigator>
 			</view>
 		</view>
 	</view>
@@ -35,11 +35,7 @@
 			}
 		},
 		onLoad() {
-			this.loginRequest({schood_num:'1234567891',password:123456}).then(data => {
-				
-			}).catch(err => {
-				this.$toast.msgToast({title:err})
-			})
+
 		},
 		onNavigationBarButtonTap(){
 			this.routerPush.navigateBack()
@@ -50,7 +46,15 @@
 		methods: {
 			...mapActions({
 				loginRequest:"session/userLogin"
-			})
+			}),
+			login(){
+				this.loginRequest(this.loginMsg)
+				.then(data => {
+					console.log(data);
+				}).catch(err => {
+					this.$toast.msgToast({title:err})
+				})
+			}
 		},
 	};
 </script>

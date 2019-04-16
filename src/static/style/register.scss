@@ -1,0 +1,68 @@
+.register{
+	margin: 0upx;
+	padding: 0upx;
+}
+
+.register-box{
+	width: 92%;
+	padding: 0% 4%;
+	margin-top: 40upx;
+}
+
+.outer-box{
+	width: 700upx;
+	height: 60upx;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 26upx;
+}
+
+.input-name{
+	width: 180upx;
+	text-align: right;
+}
+
+.from-input{
+	min-width: 360upx;
+	background: white;
+	border: 1upx solid #ccc;
+	border-radius: 8px;
+}
+
+.enter-box{
+	min-width: 360upx;
+	height: 54upx;
+	display: flex;
+	align-items: center;
+	background: white;
+	border-radius: 8px;
+	border: 1px solid #ccc;
+	color: rgb(128, 128, 128)
+}
+
+.register-button-box{
+	width: 92%;
+	padding: 0% 4%;
+	margin-top: 40upx;
+	margin-bottom: 20upx;
+}
+
+.register-button{
+	background-color: #ff6600;
+	color: white
+}
+
+.register-button-hover{
+	opacity: 0.8;
+}
+
+.login{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.login-hover{
+	color: #ff6600;
+}

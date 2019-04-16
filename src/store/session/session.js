@@ -1,9 +1,9 @@
-import {login} from '@/api/session'
+import {login, register} from '@/api/session'
 
 export default{
 	namespaced:true,
 	state:{
-		a:111
+		
 	},
 	mutations:{
 		
@@ -11,6 +11,11 @@ export default{
 	actions:{
 		userLogin({commit},msg) {
 			return login(msg).then(data => {
+				return data
+			})
+		},
+		userRegister({commit}, msg){
+			return register(msg).then(data => {
 				return data
 			})
 		}

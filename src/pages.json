@@ -7,12 +7,12 @@
 				"enablePullDownRefresh": true,
 				"app-plus": {
 					"titleNView": {
-                        "searchInput":{
-                                "align": "center",
-                                "placeholder": "请输入查找商品信息",
-                                "borderRadius":"50upx",
-                                "backgroundColor": "#fff"
-                            }
+						"searchInput": {
+							"align": "center",
+							"placeholder": "请输入查找商品信息",
+							"borderRadius": "50upx",
+							"backgroundColor": "#fff"
+						}
 					}
 				}
 			}
@@ -23,11 +23,55 @@
 				"navigationBarTitleText": "登录",
 				"app-plus": {
 					"titleNView": {
-						
+
 					}
 				}
 			}
 
+		},
+		{
+			"path": "pages/register/register",
+			"style": {
+				"navigationBarTitleText": "注册",
+				"app-plus": {
+					"titleNView": {
+
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/center/center",
+			"style": {
+				"navigationBarTitleText": "个人中心",
+				"app-plus": {
+					"titleNView": {
+
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/bidding/bidding",
+			"style": {
+				"navigationBarTitleText": "拍卖",
+				"app-plus": {
+					"titleNView": {
+
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/category/category",
+			"style": {
+				"navigationBarTitleText": "分类",
+				"app-plus": {
+					"titleNView": {
+
+					}
+				}
+			}
 		}
 	],
 	"globalStyle": {
@@ -35,5 +79,32 @@
 		"navigationBarTitleText": "拍卖商城",
 		"navigationBarBackgroundColor": "#ff6600",
 		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#666666",
+		"selectedColor": "#FFFFFF",
+		"borderStyle": "black",
+		"backgroundColor": "#ff6600",
+		"list": [{
+			"pagePath": "pages/index/index",
+			"iconPath": "static/index_path.png",
+			"selectedIconPath": "static/index.png",
+			"text": "首页"
+		}, {
+			"pagePath": "pages/category/category",
+			"iconPath": "static/category_path.png",
+			"selectedIconPath": "static/category.png",
+			"text": "分类"
+		}, {
+			"pagePath": "pages/bidding/bidding",
+			"iconPath": "static/bidding_path.png",
+			"selectedIconPath": "static/bidding.png",
+			"text": "拍卖"
+		}, {
+			"pagePath": "pages/center/center",
+			"iconPath": "static/center_path.png",
+			"selectedIconPath": "static/center.png",
+			"text": "我的"
+		}]
 	}
 }
