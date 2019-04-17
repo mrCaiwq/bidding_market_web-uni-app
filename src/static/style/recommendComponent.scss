@@ -1,0 +1,81 @@
+.recommend{
+	margin: 0upx;
+	padding: 0upx;
+}
+
+.recommend-box{
+	background: white;
+	margin-top:16upx;
+	padding: 0upx 20upx;
+}
+
+.recommend-top-bar{
+	height: 80upx;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #333;
+	font-weight: 700;
+}
+
+.replace{
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+}
+
+.replace text{
+	margin: 0upx;
+	font-size: 30upx;
+	color: #ff6600;
+}
+
+.replace image{
+	width: 28upx;
+	height: 28upx;
+	margin-right: 10upx;
+}
+
+.product-box{
+	display: flex;
+	padding: 16upx 0upx;
+	border-bottom: 1upx solid #c7c7c7;
+}
+
+.product-box image{
+	width: 160upx;
+	height: 160upx;
+	margin-right: 10upx;
+}
+
+.product-msg{
+	width: 540upx;
+	height: 160upx;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+}
+
+.product-msg text{
+	margin: 0px;
+
+}
+
+.product-name{
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	overflow: hidden;
+	/* autoprefixer: off */
+	-webkit-box-orient: vertical;
+	/* autoprefixer: on */	
+}
+
+.money{
+	color: #ff6600;
+}
+
+.money::first-letter{
+	font-size: 24upx;
+}

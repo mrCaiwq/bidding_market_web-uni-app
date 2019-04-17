@@ -2,7 +2,7 @@
 	<view class="page unLogin">
 		<view class="top-box">
 			<view>
-				<image class="avatar" src="../../../static/avatar.png" mode="scaleToFill" @click="login()"></image>
+				<image class="avatar" src="/static/avatar.png" mode="scaleToFill" @click="login()"></image>
 			</view>
 			<view class="state-title" @click="login()">
 				<text>未登录</text>
