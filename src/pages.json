@@ -7,12 +7,15 @@
 				"enablePullDownRefresh": true,
 				"app-plus": {
 					"titleNView": {
-						"searchInput": {
-							"align": "center",
-							"placeholder": "请输入查找商品信息",
-							"borderRadius": "50upx",
-							"backgroundColor": "#fff"
-						}
+						"buttons": [{
+							"text": "发布",
+							"color": "#ffffff",
+							"background": "rgba(0,0,0,0)",
+							"float": "right",
+							"fontSize":"32upx",
+							"width":"48px",
+							"height":"100upx"
+						}]
 					}
 				}
 			}

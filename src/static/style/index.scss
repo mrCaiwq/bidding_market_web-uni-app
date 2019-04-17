@@ -1,0 +1,48 @@
+.index{
+	margin: 0upx;
+	padding: 0upx;
+}
+
+.category-box{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	background: white;
+}
+
+.category {
+  width: 21%;
+  padding: 14px 0px 14px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.category text{
+	color: #333;
+}
+
+.photo{
+	width: 110upx;
+	height: 110upx;
+	margin: 0upx 24upx 8upx 24upx;
+}
+
+.more-category{
+	width: 80%;
+	height: 60upx;
+	background: #ff6600;
+	color: white;
+	font-weight: 700;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 8upx;
+	margin-bottom: 14upx
+}
+
+.button-hover{
+	opacity: 0.8;
+}

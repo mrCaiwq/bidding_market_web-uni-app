@@ -48,6 +48,9 @@
 				loginRequest:"session/userLogin"
 			}),
 			login(){
+				if(!this.loginMsg.schood_num || !this.loginMsg.password){
+					return this.$toast.msgToast({title:'请把登录信息补全'})
+				}
 				this.loginRequest(this.loginMsg)
 				.then(data => {
 					console.log(data);
