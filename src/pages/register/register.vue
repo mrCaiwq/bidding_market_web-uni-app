@@ -84,6 +84,11 @@
 				this.registerMsg.enter_year = this.year[e.detail.value]
 			},
 			register(){
+				for (var key in this.registerMsg) {
+					if(!this.registerMsg[key]){
+						return this.$toast.msgToast({title:'请把注册信息补全'})
+					}
+				}
 				this.registerRequest(this.registerMsg)
 				.then(data => {
 					console.log(data)

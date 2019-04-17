@@ -1,0 +1,24 @@
+.unLogin{
+	margin: 0upx;
+	padding: 0upx;
+}
+
+.top-box{
+	background: rgba(255,102,0, 0.8);
+	height: 300upx;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.avatar{
+	width: 128upx;
+	height: 128upx;
+	border-radius: 8upx;
+}
+
+.state-title text{
+	color: white;
+}
